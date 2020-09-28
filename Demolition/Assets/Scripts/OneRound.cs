@@ -10,6 +10,8 @@ public class OneRound : MonoBehaviour
 
     Manager manager;
 
+    public int numberOfBallsForBonus = 5;
+
     // Start is called before the first frame update
     void Start()
     {

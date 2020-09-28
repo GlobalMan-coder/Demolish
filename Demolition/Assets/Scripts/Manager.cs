@@ -13,10 +13,21 @@ public class Manager : MonoBehaviour
 
     Vector3 positionTGoTo;
 
+    public GameObject roundCompleteText;
+
+    public List<GameObject> progressBarImagesList;
+
     // Start is called before the first frame update
     void Start()
     {
         FindRounds();
+
+        roundCompleteText.SetActive(false);
+
+        for(int i = 0; i < progressBarImagesList.Count; i++)
+        {
+            progressBarImagesList[i].SetActive(false);
+        }
     }
    
 
@@ -46,9 +57,16 @@ public class Manager : MonoBehaviour
 
     public void RoundWasComplete()
     {
+        roundCompleteText.SetActive(true);
+        roundCompleteText.GetComponent<Animation>().Play();
+
+        progressBarImagesList[roundIndex].SetActive(true);
+
         roundIndex++;
         if(roundIndex < roundsList.Count)
         {
+
+
             positionTGoTo = roundsList[roundIndex].cameraPosition;
             MoveCameraToNextRound();
         }
