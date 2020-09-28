@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Basic Launch.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Bowling.unity
+    guid: b254a9a92866844b19b224ad29e2a1d4
+  - enabled: 1
+    path: Assets/Scenes/Tap & Launch.unity
+    guid: 180e049eb67c344768f29f487a677277
   m_configObjects: {}

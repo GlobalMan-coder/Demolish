@@ -120,7 +120,9 @@
     <Compile Include="Assets\RayFire\Tutorial\Scripts\DemolitionEventScript.cs" />
     <Compile Include="Assets\Scripts\ApplyDamage.cs" />
     <Compile Include="Assets\Scripts\Checker.cs" />
+    <Compile Include="Assets\Scripts\DebugUI.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Scripts\OneRound.cs" />
     <Compile Include="Assets\Scripts\OneShape.cs" />
     <Compile Include="Assets\Scripts\Projektile.cs" />
     <Compile Include="Assets\Scripts\Throw.cs" />
@@ -129,43 +131,43 @@
     <None Include="Assets\RayFire\Info\CHANGELOG.txt" />
     <None Include="Assets\RayFire\Info\README.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -339,16 +341,16 @@
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="RFLib_DotNet_2018_osx">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Assets/RayFire/Plugins/Mac/RFLib_DotNet_2018_osx.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Assets/RayFire/Plugins/Mac/RFLib_DotNet_2018_osx.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/abelgalvan/Desktop/Demolition/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/abelgalvan/Desktop/GitHub/Demolition/Demolish/Demolition/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.17f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -710,6 +712,12 @@
     <Reference Include="Boo.Lang">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{F6908B1D-93C1-2F77-5A7B-24A969B62A2D}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

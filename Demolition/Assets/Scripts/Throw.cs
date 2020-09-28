@@ -36,6 +36,7 @@ public class Throw : MonoBehaviour {
 
     void ThrowBox(float deviationOnX, float deviationOnY)
     {
+        startingPositionOfThrow = new Vector3(camera.transform.position.x, camera.transform.position.y - 2f, camera.transform.position.z);
         GameObject oneBox = Instantiate(boxPrefab, startingPositionOfThrow, camera.transform.rotation);
         oneBox.GetComponent<Rigidbody>().AddForce(new Vector3(deviationOnX, upForce + deviationOnY, forwardForce), ForceMode.Impulse);
 

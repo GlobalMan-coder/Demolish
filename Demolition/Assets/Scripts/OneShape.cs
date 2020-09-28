@@ -33,8 +33,8 @@ public class OneShape : MonoBehaviour
             {
                 hasBeenDestroyed = true;
                 Debug.Log("Destroyed!");
+                GetComponentInParent<OneRound>().ShapeHasFallen();
             }
-            
         }
     }
 

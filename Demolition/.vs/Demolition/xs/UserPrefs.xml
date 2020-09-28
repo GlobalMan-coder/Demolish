@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{E7D28A3A-B8C2-044C-A69B-4CD9A8B26B2D}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Manager.cs">
     <Files>
-      <File FileName="Assets/RayFire/Info/README.txt" Line="12" Column="38" />
       <File FileName="Assets/Scripts/ApplyDamage.cs" />
       <File FileName="Assets/Scripts/Projektile.cs" />
-      <File FileName="Assets/Scripts/OneShape.cs" Line="35" Column="41" />
+      <File FileName="Assets/Scripts/OneShape.cs" Line="37" Column="14" />
       <File FileName="Assets/Scripts/Checker.cs" />
-      <File FileName="Assets/Scripts/Manager.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Manager.cs" Line="41" Column="6" />
+      <File FileName="Assets/Scripts/OneRound.cs" Line="29" Column="60" />
+      <File FileName="Assets/Scripts/Throw.cs" Line="39" Column="139" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f49ce258-3000-43db-a853-772a8ee0e156" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0e51425b-474f-46b4-9bc2-10bac79d1f86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
