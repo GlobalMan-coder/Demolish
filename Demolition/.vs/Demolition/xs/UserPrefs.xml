@@ -6,13 +6,13 @@
       <File FileName="Assets/Scripts/OneShape.cs" />
       <File FileName="Assets/Scripts/Checker.cs" />
       <File FileName="Assets/Scripts/Manager.cs" Line="63" Column="59" />
-      <File FileName="Assets/Scripts/OneRound.cs" Line="13" Column="42" />
+      <File FileName="Assets/Scripts/OneRound.cs" />
       <File FileName="Assets/Scripts/Throw.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b2c820ac-36da-4748-8757-4c722f1998a0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="617094d3-d619-447c-b8f8-d15d65545228" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

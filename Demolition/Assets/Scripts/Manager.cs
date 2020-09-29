@@ -31,9 +31,9 @@ public class Manager : MonoBehaviour
     }
    
 
-    public void Restart()
+    public void Restart(int index)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(index);
     }
 
     void FindRounds()
@@ -65,10 +65,31 @@ public class Manager : MonoBehaviour
         roundIndex++;
         if(roundIndex < roundsList.Count)
         {
-
-
             positionTGoTo = roundsList[roundIndex].cameraPosition;
             MoveCameraToNextRound();
+        }
+
+        StartCoroutine(WaitToDeactivateRound());
+    }
+
+    IEnumerator WaitToDeactivateRound()
+    {
+        for (int i = 0; i < roundsList.Count; i++)
+        {
+            if (roundIndex == i)
+            {
+                roundsList[i].gameObject.SetActive(true);
+            }
+        }
+
+        yield return new WaitForSeconds(2);
+
+        for(int i = 0; i < roundsList.Count; i++)
+        {
+            if(i < roundIndex)
+            {
+                roundsList[i].gameObject.SetActive(false);
+            }
         }
     }
 }
