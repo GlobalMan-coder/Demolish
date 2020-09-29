@@ -121,10 +121,12 @@
     <Compile Include="Assets\Scripts\ApplyDamage.cs" />
     <Compile Include="Assets\Scripts\Checker.cs" />
     <Compile Include="Assets\Scripts\DebugUI.cs" />
+    <Compile Include="Assets\Scripts\LunchSprite.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\OneRound.cs" />
     <Compile Include="Assets\Scripts\OneShape.cs" />
     <Compile Include="Assets\Scripts\Projektile.cs" />
+    <Compile Include="Assets\Scripts\Tap_Lunch.cs" />
     <Compile Include="Assets\Scripts\Throw.cs" />
     <None Include="Assets\BrokenVector\LowPolyTreePack\README.txt" />
     <None Include="Assets\RayFire\Info\License.txt" />
