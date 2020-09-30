@@ -127,6 +127,6 @@ public class Manager : MonoBehaviour
     public void UpdateMoney(int amount)
     {
         amountOfCoins += amount;
-        moneyText.text = amountOfCoins.ToString();
+        //moneyText.text = amountOfCoins.ToString();
     }
 }
