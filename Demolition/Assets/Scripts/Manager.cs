@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
@@ -17,9 +18,16 @@ public class Manager : MonoBehaviour
 
     public List<GameObject> progressBarImagesList;
 
+    int amountOfCoins;
+    public Text moneyText;
+    public GameObject coinPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
+        amountOfCoins = PlayerPrefs.GetInt("coins", 0);
+        UpdateMoney(0);
+
         FindRounds();
 
         roundCompleteText.SetActive(false);
@@ -62,12 +70,16 @@ public class Manager : MonoBehaviour
 
         progressBarImagesList[roundIndex].SetActive(true);
 
+        //StartCoroutine(GiveCoins());
+
         roundIndex++;
         if(roundIndex < roundsList.Count)
         {
             positionTGoTo = roundsList[roundIndex].cameraPosition;
             MoveCameraToNextRound();
         }
+
+        PlayerPrefs.SetInt("coins", amountOfCoins);
 
         StartCoroutine(WaitToDeactivateRound());
     }
@@ -91,5 +103,30 @@ public class Manager : MonoBehaviour
                 roundsList[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    public IEnumerator GiveCoins()
+    {
+        for(int i = 0; i < 8; i++)
+        {
+            float random = Random.Range(0f, 0.1f);
+            yield return new WaitForSeconds(random);
+
+            GameObject oneCoin = Instantiate(coinPrefab);
+            oneCoin.transform.position = roundsList[roundIndex].transform.position +
+                new Vector3(0,0,20);
+
+            float randomX = Random.Range(-1f, 1f);
+            float randomY = Random.Range(-1f, 1f);
+            float randomZ = Random.Range(-1f, 1f);
+            oneCoin.transform.position += new Vector3(randomX, randomY, randomZ);
+
+        }
+    }
+
+    public void UpdateMoney(int amount)
+    {
+        amountOfCoins += amount;
+        moneyText.text = amountOfCoins.ToString();
     }
 }

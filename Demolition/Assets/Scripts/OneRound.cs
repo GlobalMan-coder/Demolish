@@ -34,6 +34,8 @@ public class OneRound : MonoBehaviour
 
     public void ShapeHasFallen()
     {
+        StartCoroutine(manager.GiveCoins());
+
         if (AllShapesFallen())
         {
             Debug.Log("round complete");

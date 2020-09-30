@@ -3,16 +3,17 @@
     <Files>
       <File FileName="Assets/Scripts/ApplyDamage.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Projektile.cs" />
-      <File FileName="Assets/Scripts/OneShape.cs" />
-      <File FileName="Assets/Scripts/Checker.cs" />
-      <File FileName="Assets/Scripts/Manager.cs" Line="63" Column="59" />
-      <File FileName="Assets/Scripts/OneRound.cs" />
+      <File FileName="Assets/Scripts/OneShape.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Checker.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Manager.cs" Line="122" Column="82" />
+      <File FileName="Assets/Scripts/OneRound.cs" Line="37" Column="45" />
       <File FileName="Assets/Scripts/Throw.cs" />
+      <File FileName="Assets/Scripts/Collectable.cs" Line="18" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="617094d3-d619-447c-b8f8-d15d65545228" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2fa50fda-e8a5-457d-8ca8-f849efd67702" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
