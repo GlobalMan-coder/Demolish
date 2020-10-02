@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -461,7 +461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 970690763}
-  - component: {fileID: 970690762}
+  - component: {fileID: 970690764}
   m_Layer: 0
   m_Name: Throw
   m_TagString: Untagged
@@ -469,25 +469,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &970690762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970690761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f60fe0e680f4343a28a914e5cc9ffa93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forwardForce: 700
-  upForce: 150
-  divisionDeviationX: 2
-  divisionDeviationY: 2
-  boxPrefab: {fileID: 2289600982760162221, guid: f8a3a5e694bf944e081307c61423b26b,
-    type: 3}
-  camera: {fileID: 963194225}
 --- !u!4 &970690763
 Transform:
   m_ObjectHideFlags: 0
@@ -496,12 +477,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970690761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -9, z: 18}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1476339514}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &970690764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970690761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d984abbfc26194f44ba42fab36740195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardForce: 1000
+  boxPrefab: {fileID: 2289600982760162221, guid: f8a3a5e694bf944e081307c61423b26b,
+    type: 3}
+  duration: 3
+  camera: {fileID: 963194225}
 --- !u!1 &1165262404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6807561920032942841, guid: 4492bdc1169f140d3ba075e8e733bef3,
@@ -626,7 +624,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
-  - {fileID: 970690763}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

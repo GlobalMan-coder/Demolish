@@ -7,6 +7,7 @@ public class Bowling : MonoBehaviour
     [SerializeField] float startSpeed = 10;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform track;
+    [SerializeField] float bendRate = 5f;
     Camera mainCamera;
     Vector3 startingPos;
     Vector3 speedVector;
@@ -28,8 +29,6 @@ public class Bowling : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isMouseDown = true;
-            speedVector = GetDir() * startSpeed;
-            accelerate = new Vector3(0, 0, 0);
             line.enabled = true;
             track.gameObject.SetActive(true);
         }
@@ -42,10 +41,12 @@ public class Bowling : MonoBehaviour
         }
         if (isMouseDown)
         {
-            deltaSpeed = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0);
-            deltaforce = new Vector3(deltaSpeed.x * -5f, deltaSpeed.y * -5f, 0);
-            speedVector += deltaSpeed;
-            accelerate += deltaforce;
+            speedVector = GetDir() * startSpeed;
+            accelerate = new Vector3(-speedVector.x * bendRate , 0, 0);
+            //deltaSpeed = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0);
+            //deltaforce = new Vector3(deltaSpeed.x * -5f, deltaSpeed.y * -5f, 0);
+            //speedVector += deltaSpeed;
+            //accelerate += deltaforce;
             LineDraw();
         }
     }
