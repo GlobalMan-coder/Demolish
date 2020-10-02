@@ -28,6 +28,7 @@ public class Projectile : MonoBehaviour
             collision.gameObject.GetComponentInParent<ApplyDamage>().ApplyADamage(
                 GetComponent<Rigidbody>().velocity.magnitude,
                 collision.contacts[0].point, 2);
+
         }
     }
 }
