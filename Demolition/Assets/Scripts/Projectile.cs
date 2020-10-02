@@ -25,10 +25,10 @@ public class Projectile : MonoBehaviour
         {
             Debug.Log("HIt");
 
-            collision.gameObject.GetComponentInParent<ApplyDamage>().ApplyADamage(
+            /*collision.gameObject.GetComponentInParent<ApplyDamage>().ApplyADamage(
                 GetComponent<Rigidbody>().velocity.magnitude,
                 collision.contacts[0].point, 2);
-
+            */
 
             //collision.gameObject.GetComponentInParent<ApplyDamage>().ApplyADamage(
             //    GetComponent<Rigidbody>().velocity.magnitude,
