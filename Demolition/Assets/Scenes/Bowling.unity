@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1255,6 +1255,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2289600982760162221, guid: f8a3a5e694bf944e081307c61423b26b,
     type: 3}
   track: {fileID: 1320940032}
+  bendRate: 3
 --- !u!1 &1043437564 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8619839299838206187, guid: 38c27d44e168443188d18411a099d8e4,
@@ -3206,11 +3207,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Camera Parent
-      objectReference: {fileID: 0}
-    - target: {fileID: 8619839299838206187, guid: 38c27d44e168443188d18411a099d8e4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38c27d44e168443188d18411a099d8e4, type: 3}
