@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &311046508 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2000188589, guid: 4492bdc1169f140d3ba075e8e733bef3,
+    type: 3}
+  m_PrefabInstance: {fileID: 480639304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &367714323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -620,6 +632,17 @@ PrefabInstance:
       propertyPath: progressBarImagesList.Array.data[3]
       value: 
       objectReference: {fileID: 480639305}
+    - target: {fileID: 8458238142637872905, guid: 100aef86b0c1444c491927106f1a8d65,
+        type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 3713330654854250808, guid: eb54263d9cba54e529da622cfa191e14,
+        type: 3}
+    - target: {fileID: 8458238142637872905, guid: 100aef86b0c1444c491927106f1a8d65,
+        type: 3}
+      propertyPath: moneyText
+      value: 
+      objectReference: {fileID: 311046508}
     - target: {fileID: 8458238142637872906, guid: 100aef86b0c1444c491927106f1a8d65,
         type: 3}
       propertyPath: m_LocalPosition.x
