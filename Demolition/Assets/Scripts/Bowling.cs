@@ -16,7 +16,7 @@ public class Bowling : MonoBehaviour
     Vector3 deltaSpeed, deltaforce;
     LineRenderer line;
     bool isMouseDown;
-
+    float mouseY = 0;
 
     void Start()
     {
@@ -38,6 +38,7 @@ public class Bowling : MonoBehaviour
             isMouseDown = false;
             line.enabled = false;
             track.gameObject.SetActive(false);
+            mouseY = 0;
         }
         if (isMouseDown)
         {
@@ -62,6 +63,8 @@ public class Bowling : MonoBehaviour
     Vector3 GetDir()
     {
         Vector3 mousePos = Input.mousePosition;
+        if (mouseY != 0) mousePos.y = mouseY;
+        mouseY = mousePos.y;
         startingPos = mainCamera.transform.position + new Vector3(0, -2, 0);
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(mousePos);
