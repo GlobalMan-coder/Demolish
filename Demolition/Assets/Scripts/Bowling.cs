@@ -8,6 +8,7 @@ public class Bowling : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform track;
     [SerializeField] float bendRate = 5f;
+    [SerializeField] Transform StartTransform;
     Camera mainCamera;
     Vector3 startingPos;
     Vector3 speedVector;
@@ -31,6 +32,7 @@ public class Bowling : MonoBehaviour
             isMouseDown = true;
             line.enabled = true;
             track.gameObject.SetActive(true);
+            startingPos = mainCamera.transform.position - new Vector3(0, mainCamera.transform.position.y, -17);
         }
         if (Input.GetMouseButtonUp(0))
         {
@@ -63,20 +65,21 @@ public class Bowling : MonoBehaviour
     Vector3 GetDir()
     {
         Vector3 mousePos = Input.mousePosition;
-        if (mouseY != 0) mousePos.y = mouseY;
-        mouseY = mousePos.y;
-        startingPos = mainCamera.transform.position + new Vector3(0, -2, 0);
+        //if (mouseY != 0) mousePos.y = mouseY;
+        //mouseY = mousePos.y;
+
+        //startingPos = mainCamera.transform.position + new Vector3(0, -2, 0);
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(mousePos);
-        Vector3 dir;
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-        {
-            dir = (hit.point - startingPos).normalized;
-        }
-        else
-        {
-            dir = (ray.direction * 1000 + mainCamera.transform.position - startingPos).normalized;
-        }
+        Vector3 dir = new Vector3(ray.direction.x, 0.1f, ray.direction.z);
+        //if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        //{
+        //    dir = (hit.point - startingPos).normalized;
+        //}
+        //else
+        //{
+        //    dir = (ray.direction * 1000 + mainCamera.transform.position - startingPos).normalized;
+        //}
         return dir;
     }
     void LineDraw()
