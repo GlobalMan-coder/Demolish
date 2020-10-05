@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        isForced = false;
+        //isForced = false;
         if (collision.gameObject.tag == "breakable")
         {
             Debug.Log("HIt");
